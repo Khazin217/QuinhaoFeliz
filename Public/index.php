@@ -11,11 +11,59 @@ include "./../App/Libraries/Controller.php";
     <title><?=APP_NOME?></title>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>
+    <link rel="icon" href="<?=URL?>./img/Logotipo - Quinhão Feliz.png" alt="logo tipo">
+    <style>
+        body{
+            padding:0 10%;
+        }
+        img{
+            width:100%; 
+            heigth:100%;
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+        .img2{
+            position:center;
+            height:90%;
+            width:40%;
+        }
+        .img3{
+            position:center;
+            height:90%;
+            width:40%;
+        }
+        .inline{
+            background-position: center center;
+            display: flex;
+        }
+        .img4{
+            position:center;
+            height:90%;
+            width:40%;
+        }
+        .img5{
+            position:center;
+            height:90%;
+            width:40%;           
+        }
+       
+    </style>
 </head>
 <body>
     <?php
     include "../App/Views/header.php";
     $rotas = new Rota();
+    ?>
+    <img class="img" src="<?=URL?>./img/FundoTelaInicial.jpg" alt="imagem fundo">
+    <div class="inline">
+       <img class="img2" src="<?=URL?>./img/Salgados.jpg" alt="ImagemSalvadosTelaInicial">
+       <img class="img3" src="<?=URL?>./img/Doces.jpeg" alt="imagem fundo">
+    </div>
+     <div class="inline">
+         <img class="img4" src="<?=URL?>./img/Bebidas.jpg" alt="imagemBebidas">
+         <img class="img5" src="<?=URL?>./img/imgHistorico.jpg" alt="imagemHistórico">
+     </div>    
+    <?php
    // $rotas->url();
     include "../App/Views/footer.php";
     ?>

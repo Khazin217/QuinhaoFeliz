@@ -1,28 +1,151 @@
-<header class="bg-dark">
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark position-relative">
-            <a class="navbar-brand" href="<?=URL?>">LOGO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAD</title>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Menu alinhado à esquerda -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=URL?>" data-tooltip="tooltip" title="Página Inicial">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=URL?>/paginas/sobre" data-tooltip="tooltip" title="Sobre nós">Sobre nós</a>
-                    </li>
-                </ul>
-            </div>
+    <style>     
+        ul{
+            position: fixed;
+            top: 10px;
+            padding: 10px 100px;            
+        }
+        .nav{
+            right:10px;
+            padding: 10px 10px;
+            display: inline ;
+            margin: 0 auto;
+            border-radius:10px;
+            background-color:width;
+        }
+        .fixed{
+            background-image:(url="<?=URL?>./img/bnner-fundo.jpeg");
+            background-image: fixed;
+            border-radius:10px;
+            display:flex;
+            blackground-color: #aed624;     
+        }
+        li{
+            color: black;
+            padding: 10px 20px;
+            border-radius:7px;
+           
+            background-color:grey; 
+            list-style: none;
+            display:inline-block;          
+        }
+        li:hover{
+            background: black; 
+        }
+        .product{
+            color:black;
+            border-radius:8px;
+            cursor: pointer;
+            background-color:#808080;
+        }.product:hover{
+            background-color:grey;
+        }
 
-            <!-- Botões alinhados à direita da tela -->
-            <div class="position-absolute" style="right: 0;">
-                <a class="btn btn-success mr-3" href="#" data-tooltip="tooltip" title="Não tem uma conta? Cadastre-se">Cadastre-se</a>
-                <a class="" href="#" data-tooltip="tooltip" title="Tem uma conta? Faça login">Entrar</a>
-            </div>
-        </nav>
-    </div>
-</header>
+        .entrar{
+            background-color:grey;
+            border-radius:8px;
+        }
+        .entar:hover{
+            background-color:#f9f9f9;
+        }
+        img{
+            padding: 10px 0;
+        }
+       li:hover{        
+        background-color:gray;
+        cursor: pointer;
+       }
+       .fixed{
+        background-image: url("<?=URL?>./img/background-head.jpg");
+        height: 100%;
+        width:100%;
+       }
+       .fundohead{
+        background-image:url("<?=URL?>./img/backgound-head.jpg");
+       }
+       .cadastrar{
+        border-radius: 10px;
+        background-color: black;
+        color:white;
+       }
+       .cadastrar:hover{
+        background-color:#383838;
+       }
+       .product{
+        border-radius: 10px;
+        background-color: grey;
+        color:black;
+       }
+       .product:hover{
+        background-color:white;
+       }
+
+       .home{
+        border-radius: 10px;
+        background-color: grey;
+        color:black;
+       }
+       .home:hover{
+        background-color:white;
+       }
+
+       .sobre{
+        border-radius: 10px;
+        background-color: grey;
+        color:black;
+       }
+       .sobre:hover{
+        background-color:white;
+       }
+
+       .contato{
+        border-radius: 10px;
+        background-color: grey;
+        color:black;
+       }
+       .contato:hover{
+        background-color:white;
+       }
+
+       .entrar{
+        border-radius: 10px;
+        background-color: grey;
+        color:black;
+       }
+       .entrar:hover{
+        background-color:white;
+       }
+
+       body{
+        background-image:url("<?=URL?>./img/background-head.jpg");
+        background-repeat:no-repeat;
+        padding: 10px 0px;
+        height:100%;
+        top:0px;
+        position:auto;
+       }
+    </style>
+</head>
+<body>
+    <nav class="fixed" >
+    <img src="<?=URL?>./img/logo-IFRO.jpg" alt="logozin" style="width:40px; heigth:10px; position: fixed;">
+        <div>
+        <!--<img class="fundohead"src="<?=URL?>./imgbanner-fundo.jpeg" alt=""> -->
+            <ul class="nav" >
+                <li class="product" href="" >Product</li>
+                <li class="home" href="" >Home</li>
+                <li class="sobre" href="" >Sobre</li>
+                <li class="contato" href="" >Contato</li>
+                <li class="entrar" href="<?=URL?>./View/pagina/loguin.php" >Entrar</li>
+                <li class="cadastrar" style="color:widt;" href="cadastro.html" >Cadastrar</li>                
+            </ul>
+        </div>
+    </nav>   
+</body>
+</html>

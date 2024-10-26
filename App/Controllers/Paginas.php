@@ -1,8 +1,8 @@
 <?php
 class Paginas extends Controller{
     public function index(){
-      $dados = ['titulo'=>'Pagina Inicial',
-                 'descricao'=> 'Aula de PHP'
+      $dados = ['titulo'=>'Quinhão Feliz',
+                 'descricao'=> ''
                ];
         $this->view('pagina/home', $dados);
     }
