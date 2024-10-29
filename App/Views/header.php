@@ -142,8 +142,8 @@
                 <li class="home" href="" >Home</li>
                 <li class="sobre" href="" >Sobre</li>
                 <li class="contato" href="" >Contato</li>
-                <li class="entrar" href="<?=URL?>./View/pagina/loguin.php" >Entrar</li>
-                <li class="cadastrar" style="color:widt;" href="cadastro.html" >Cadastrar</li>                
+                <li class="entrar" href="./pagina/loguin.php" >Entrar</li>
+                <li class="cadastrar" style="color:widt;" href="<?=URL?>./pagina/cadastro.php" >Cadastrar</li>                
             </ul>
         </div>
     </nav>   

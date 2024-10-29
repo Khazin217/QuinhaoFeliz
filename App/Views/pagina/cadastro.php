@@ -6,11 +6,11 @@
     <title>cadastro</title>
     <style>
         body{
-            background-image: url("bnner-fundo.jpeg");
-            
+        background-image: url('<?=URL?>../App/Public/img/banner-fundo.jpeg');
+        
         }
         .form{
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgb(0, 0, 0,0.6);
             position: center;
             border-radius: 10px;
             padding: 10px 10px;           
@@ -18,6 +18,7 @@
             top:50%;
             left:50%;
             transform:translate(-50%, -50%);
+            border-radius: 15px;
            }
         div{
             color:black;
@@ -25,6 +26,23 @@
         .titulo{
             font-family: Arial, Helvetica, sans-serif;
         }
+        .botao{
+            height: auto;
+            width: 50%;
+            margin: 22%;
+            margin-top: 8%;
+            margin-block-end:6%;
+            border-radius: 8px;
+            border: none;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }.botao:hover{
+            background-color:rgb(93, 196, 53);
+            color: rgb(255, 255, 255);
+        }
+
+
     </style>
 </head>
 <body>
@@ -35,17 +53,17 @@
         <h1 class="titulo" >Faça seu Cadastro</h1>
         <div>
             <label for="nome">Nome: </label>
-            <input type="name" id="nome" name="nome"><br><br> 
+            <input type="name" id="nome" name="nome" placeholder="Digite seu nome"><br><br> 
             
             <label for="Email">E-mail: </label>
-            <input type="email" id="Email" name="email"><br><br>
+            <input type="email" id="Email" name="email" placeholder="Digite seu e-mail"><br><br>
 
             <label for="senha">Senha: </label>
-            <input type="password" id="senha" name="senha"><br><br>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
 
      
-            <a style="left:10%;" href="#">Esqueceu a senha</a><br><br>
-            <button style="left: center; " type="submit" href="<?=URL?>./pagina/loguin.php">Cadastrar</button>
+            <a style="width:10px;" href="#">Já possui uma conta?<br>Fazer Loguin.</a><br>
+            <button class="botao" style="left: center; " type="submit" href="<?=URL?>./pagina/loguin.php">Cadastrar</button>
         </div>
     </form>
     
