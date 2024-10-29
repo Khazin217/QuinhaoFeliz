@@ -64,7 +64,8 @@
        .fixed{
         background-image: url("<?=URL?>./img/background-head.jpg");
         height: 100%;
-        width:100%;
+
+        margin:0;
        }
        .fundohead{
         background-image:url("<?=URL?>./img/backgound-head.jpg");
@@ -125,6 +126,7 @@
        body{
         background-image:url("<?=URL?>./img/background-head.jpg");
         background-repeat:no-repeat;
+        width:100%;
         padding: 10px 0px;
         height:100%;
         top:0px;
@@ -139,11 +141,11 @@
         <!--<img class="fundohead"src="<?=URL?>./imgbanner-fundo.jpeg" alt=""> -->
             <ul class="nav" >
                 <li class="product" href="" >Product</li>
-                <li class="home" href="" >Home</li>
-                <li class="sobre" href="" >Sobre</li>
+                <li class="home" href="<?=URL?>/" >Home</li>
+                <li class="sobre" href="<?=URL?>/paginas/sobre" >Sobre</li>
                 <li class="contato" href="" >Contato</li>
                 <li class="entrar" href="./pagina/loguin.php" >Entrar</li>
-                <li class="cadastrar" style="color:widt;" href="<?=URL?>./pagina/cadastro.php" >Cadastrar</li>                
+                <li class="cadastrar" style="color:widt;" href="<?=URL?>/pagina/cadastro" >Cadastrar</li>                
             </ul>
         </div>
     </nav>   

@@ -6,7 +6,7 @@
     <title>cadastro</title>
     <style>
         body{
-        background-image: url('<?=URL?>../App/Public/img/banner-fundo.jpeg');
+            background-image:url(./img/FundoTelaInicial.jpg);
         
         }
         .form{
