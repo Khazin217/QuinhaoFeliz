@@ -4,44 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
+    <link rel="stylesheet" href="Public/css/estilo.css">
     <style>
-        body{
-            background-image:url(./img/FundoTelaInicial.jpg);
-        
-        }
-        .form{
-            background-color: rgb(0, 0, 0,0.6);
-            position: center;
-            border-radius: 10px;
-            padding: 10px 10px;           
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%, -50%);
-            border-radius: 15px;
-           }
-        div{
-            color:black;
-        }
-        .titulo{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .botao{
-            height: auto;
-            width: 50%;
-            margin: 22%;
-            margin-top: 8%;
-            margin-block-end:6%;
-            border-radius: 8px;
-            border: none;
-            padding: 10px;
-            background-color: black;
-            color: white;
-        }.botao:hover{
-            background-color:rgb(93, 196, 53);
-            color: rgb(255, 255, 255);
-        }
-
+  
 
     </style>
 </head>
