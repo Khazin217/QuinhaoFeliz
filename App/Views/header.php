@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEAD</title>
-    <link rel="stylesheet" href="../../Public/css/header.css">
-    <!-- <style>     
+    <style>     
         ul{
             position: fixed;
             top: 10px;
@@ -24,7 +23,7 @@
             background-image: fixed;
             border-radius:10px;
             display:flex;
-            blackground-color: #aed624;     
+            background-color: #aed624;     
         }
         li{
             color: black;
@@ -130,30 +129,14 @@
         top:0px;
         position:auto;
        }
-    </style> -->
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo-IFRO.jpg" alt="logo_IFRO">
-        </div>
-        <nav> <!-- começo navegação -->
-            <ul class="ul">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="#footer" class="rolagem">Sobre Nos</a></li>
-                <li><a href="#footer" class="rolagem">Contato</a></li>
-            </ul>
-        </nav> <!-- fim navegação -->
-        <div class="butoes">
-            <button class="btn"><a href="login.html">Entrar</a></button>
-            <button class="btn cadastra"><a href="cadastra.html">Cadastra-se</a></button>
-        </div>
-    </header>
-    <!-- <nav class="fixed">
+    <nav class="fixed">
     <img src="<?=URL?>./img/logo-IFRO.jpg" alt="logozin" style="width:40px; heigth:10px; position: fixed;">
-        <div> -->
-        <!--<img class="fundohead"src="<?=URL?>./imgbanner-fundo.jpeg" alt=""> -->
-            <!-- <ul class="nav" >
+        <div>
+        <img class="fundohead"src="<?=URL?>./imgbanner-fundo.jpeg" alt="">
+            <ul class="nav" >
                 <li class="product" href="" >Product</li>
                 <li class="home" href="" >Home</li>
                 <li class="sobre" href="" >Sobre</li>
@@ -162,6 +145,6 @@
                 <li class="cadastrar" style="color:widt;" href="cadastro.html" >Cadastrar</li>                
             </ul>
         </div>
-    </nav>-->
+    </nav>   
 </body>
 </html>

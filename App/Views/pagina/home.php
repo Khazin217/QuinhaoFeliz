@@ -11,6 +11,7 @@
     <style>
         h1{
             padding:100px 20px;
+            margin-top:10px;
             left: 20%;
             position:center;
             text:fixed;

@@ -12,7 +12,7 @@ include "./../App/Libraries/Controller.php";
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>
     <link rel="icon" href="<?=URL?>./img/Logotipo - Quinhão Feliz.png" alt="logo tipo">
-    <!-- <style>
+    <style>
         body{
             padding:0 10%;
         }
@@ -47,14 +47,22 @@ include "./../App/Libraries/Controller.php";
             width:40%;           
         }
        
-    </style> -->
+    </style>
 </head>
 <body>
     <?php
     include "../App/Views/header.php";
     $rotas = new Rota();
     ?>
-   
+    <img class="img" src="<?=URL?>./img/FundoTelaInicial.jpg" alt="imagem fundo">
+    <div class="inline">
+       <img class="img2" src="<?=URL?>./img/Salgados.jpg" alt="ImagemSalvadosTelaInicial">
+       <img class="img3" src="<?=URL?>./img/Doces.jpeg" alt="imagem fundo">
+    </div>
+     <div class="inline">
+         <img class="img4" src="<?=URL?>./img/Bebidas.jpg" alt="imagemBebidas">
+         <img class="img5" src="<?=URL?>./img/imgHistorico.jpg" alt="imagemHistórico">
+     </div>    
     <?php
    // $rotas->url();
     include "../App/Views/footer.php";
