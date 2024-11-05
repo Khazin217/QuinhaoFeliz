@@ -133,7 +133,7 @@
     </style> -->
 </head>
 <body>
-<header>
+    <header>
         <div class="logo">
             <img src="img/logo-IFRO.jpg" alt="logo_IFRO">
         </div>
