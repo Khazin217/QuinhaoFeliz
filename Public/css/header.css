@@ -1,0 +1,66 @@
+/* Estilizando o HEADER da página  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Essa parte faz o deslize da página para o "Sobre nos" e "Contato" */
+html{
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    width: 75px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
+button{
+    display: flex;
+    gap: 10px;
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 2px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+/* começo da alteração nos botôes */
+.butoes {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.butoes a{
+    text-decoration: none;
+}
+.btn{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #ccc;
+}
+.cadastra {
+    background-color: black;
+}
+.cadastra:hover {
+    background-color: #444;
+}
