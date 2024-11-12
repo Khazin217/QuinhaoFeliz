@@ -20,8 +20,8 @@
             </ul>
         </nav> <!-- fim navegação -->
         <div class="butoes">
-            <button class="btn"><a href="login.html">Entrar</a></button>
-            <button class="btn cadastra"><a href="cadastra.html">Cadastra-se</a></button>
+            <button class="btn"><a href="<?URL?>./pagina/login">Entrar</a></button>
+            <button class="btn cadastra"><a href="<?=URL?>./pagina/cadastro">Cadastra-se</a></button>
         </div>
     </header>
     </header>

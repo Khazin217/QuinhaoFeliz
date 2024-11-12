@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
-    <link rel="stylesheet" href="Public/css/estilo.css">
-    <style>
-  
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/cadastro.css"/>
+    <link rel="stylesheet" href="Public/css/cadastro.css">
 </head>
 <body>
-    <?php   
-        include "../App/Views/footer.php";
-    ?>
+<!-- HEADER -->
+    <?php include "../App/Views/footer.php"; ?>
+<!-- HEADER -->
+
     <form action="fromulario" class="form">
         <h1 class="titulo" >Faça seu Cadastro</h1>
         <div>
@@ -28,9 +25,8 @@
 
      
             <a style="width:10px;" href="#">Já possui uma conta?<br>Fazer Loguin.</a><br>
-            <button class="botao" style="left: center; " type="submit" href="<?=URL?>./pagina/loguin.php">Cadastrar</button>
+            <button class="botao" style="left: center; " type="submit" href="<?=URL?>./pagina/login.php">Cadastrar</button>
         </div>
     </form>
-    
 </body>
 </html>
