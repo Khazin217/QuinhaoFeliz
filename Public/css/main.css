@@ -1,0 +1,105 @@
+/* -- -- -- -- -- -- --CSS geral da página -- -- -- -- -- -- -- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* -- -- -- -- -- -- -- Estilizando a imagem de titulo -- -- -- -- -- -- -- */
+.conteiner_main{
+    background-image: url("../img/banner-fundo.jpeg"); /* Aqui troca a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Defini como vai ser a nossa página (no caso horizontal) */
+    justify-content: center; /* Justifica os conteineis no meio da página */
+    align-items: center; /* Alinha o conteiner no meio */
+    align-content: center; /* Centraliza os containes nos centro */
+}
+
+.espaçamento{
+    height: 53.8vh;
+}
+
+.img_categoria{
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img_categoria:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 0,3);
+    cursor: pointer;
+}
+
+/* Parte do texto, parte do titulo e barra de pesquisa */
+.div_background{
+    flex-direction: column;
+    background-color: #fffaf2cc;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: #fe6c2b;
+}
+
+div p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #dd6552;
+}
+
+/* -- -- -- -- -- -- -- Estilização da barra de pesquisa -- -- -- -- -- -- -- */
+.barra_pesquisa{
+    display: flex; /* Define que é uma caixa flexivel */
+    justify-content: center; /* Justifica o conteiner no meio */
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.conteiner_pesquisa{
+    padding: 10px;
+    width: 60;
+    border: 1px solid #ccc3cc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.butao_pesquisa{
+    padding: 10px 20px;
+    background-color: #d43b2d;
+    color: #020001;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.butao_pesquisa:hover{
+    background-color: #e96d40;
+}
+
+/* -- -- -- -- -- -- -- CSS da categorias -- -- -- -- -- -- -- */
+.inline{
+    background-position: center center;
+    display: flex;
+    gap: 10px 30px;
+    padding: 20px;
+}
+
+.img_categoria{
+    width: 450px;
+    border-radius: 20px;
+}

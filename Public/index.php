@@ -1,8 +1,9 @@
 <?php
-include "./../App/configuracao.php";
-include "./../App/Libraries/Rota.php";
-include "./../App/Libraries/Controller.php";
+    include "./../App/configuracao.php";
+    include "./../App/Libraries/Rota.php";
+    include "./../App/Libraries/Controller.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,61 +13,39 @@ include "./../App/Libraries/Controller.php";
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/estilo.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>
     <link rel="icon" href="<?=URL?>./img/Logotipo - Quinhão Feliz.png" alt="logo tipo">
-    <style>
-        body{
-            padding:0 10%;
-        }
-        img{
-            width:100%; 
-            heigth:100%;
-            padding: 0 auto;
-            margin: 0 auto;
-        }
-        .img2{
-            position:center;
-            height:90%;
-            width:40%;
-        }
-        .img3{
-            position:center;
-            height:90%;
-            width:40%;
-        }
-        .inline{
-            background-position: center center;
-            display: flex;
-        }
-        .img4{
-            position:center;
-            height:90%;
-            width:40%;
-        }
-        .img5{
-            position:center;
-            height:90%;
-            width:40%;           
-        }
-       
-    </style>
+    <link rel="stylesheet" href="Public/css/main.css">
 </head>
 <body>
-    <?php
-    include "../App/Views/header.php";
-    $rotas = new Rota();
-    ?>
-    <img class="img" src="<?=URL?>./img/FundoTelaInicial.jpg" alt="imagem fundo">
-    <div class="inline">
-       <img class="img2" src="<?=URL?>./img/Salgados.jpg" alt="ImagemSalvadosTelaInicial">
-       <img class="img3" src="<?=URL?>./img/Doces.jpeg" alt="imagem fundo">
-    </div>
-     <div class="inline">
-         <img class="img4" src="<?=URL?>./img/Bebidas.jpg" alt="imagemBebidas">
-         <img class="img5" src="<?=URL?>./img/imgHistorico.jpg" alt="imagemHistórico">
-     </div>    
-    <?php
-   // $rotas->url();
-    include "../App/Views/footer.php";
-    ?>
+<!-- Inclui o HEADER da Página -->
+    <?php include "../App/Views/header.php"; $rotas = new Rota(); ?>
+<!-- Inclui o HEADER da Página -->
+    <!-- Conteúdo da Página -->
+    <main class="conteiner_main">
+        <div class="div_background">
+            <h1>Quinhão Feliz</h1> <!-- Título -->
+            <p>Matando sua fome, assim como matamos as filas.</p> <!-- Frase de sub-título-->
+        </div>
+
+        <div class="barra_pesquisa">
+            <input type="text" placeholder="O que você procura?..." class="conteiner_pesquisa">
+            <button class="butao_pesquisa">Busca Produto</button>
+        </div>
+        
+        <div class="espaçamento"></div>
+
+        <div class="inline">
+            <a href="https://www.receiteria.com.br/receitas-de-salgados-para-festas/"><img class="img_categoria" src="Public/img/Salgados.jpg" alt="Imagem_Salvados"></a>
+            <a href="http://"><img class="img_categoria" src="Public/img/Doces.jpeg" alt="Imagem _Doces"></a>
+         </div>
+          <div class="inline">
+              <a href="http://"><img class="img_categoria" src="Public/img/Bebidas.jpg" alt="Imagem_Bebidas"></a>
+             <a href="http://"><img class="img_categoria" src="Public/img/Historico.jpg" alt=Imagem_Histórico"></a>
+          </div> 
+    </main>
+    <!-- Conteúdo da Página -->
+<!-- Começo do FOOTER-->
+    <?php include "../App/Views/footer.php"; ?>
+<!-- Começo do FOOTER-->
     <script src="<?=URL?>/public/bootstrap/js/bootstrap.js"></script>
     <script src="<?=URL?>/public/js/query.js"></script>
 </body>

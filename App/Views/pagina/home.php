@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-<h1><?php echo $dados['titulo']; ?></h1>
-<p><?php echo $dados['descricao']; ?></p>
-=======
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style>
+    <!-- <style>
         h1{
             padding:100px 20px;
             margin-top:10px;
@@ -18,11 +14,17 @@
             display:flex;
             margin: 0 36%;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <h1><?php echo $dados['titulo']; ?></h1>
-    <p><?php echo $dados['descricao']; ?></p>
+<!-- <img class="img" src="<?=URL?>./img/FundoTelaInicial.jpg" alt="imagem fundo">
+    <div class="inline">
+       <img class="img2" src="<?=URL?>./img/Salgados.jpg" alt="ImagemSalvadosTelaInicial">
+       <img class="img3" src="<?=URL?>./img/Doces.jpeg" alt="imagem fundo">
+    </div>
+     <div class="inline">
+         <img class="img4" src="<?=URL?>./img/Bebidas.jpg" alt="imagemBebidas">
+         <img class="img5" src="<?=URL?>./img/imgHistorico.jpg" alt="imagemHistórico">
+     </div> -->
 </body>
 </html>
->>>>>>> refs/remotes/origin/main
