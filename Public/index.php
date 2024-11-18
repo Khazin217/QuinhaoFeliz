@@ -1,7 +1,7 @@
 <?php
     include "./../App/configuracao.php";
-    include "./../App/Libraries/Rota.php";
-    include "./../App/Libraries/Controller.php";
+    include "./../App/autoload.php";
+    // include "./../App/Libraries/Controller.php";
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 <!-- Fim do Código do Vlibras-->
 
 <!-- Inclui o HEADER da Página -->
-    <?php include "../App/Views/header.php"; $rotas = new Rota(); ?>
+    <?php include_once "../App/Views/header.php"; $rotas = new Rota(); ?>
 <!-- Inclui o HEADER da Página -->
 
 <!-- Conteúdo da Página -->
@@ -48,7 +48,7 @@
         <div class="espaçamento"></div>
 
         <div class="inline">
-            <a href="https://www.receiteria.com.br/receitas-de-salgados-para-festas/"><img class="img_categoria" src="Public/img/Salgados.jpg" alt="Imagem_Salvados"></a>
+            <a href="<?=URL?>./pagina/salgados"><img class="img_categoria" src="Public/img/Salgados.jpg" alt="Imagem_Salvados"></a>
             <a href="http://"><img class="img_categoria" src="Public/img/Doces.jpeg" alt="Imagem _Doces"></a>
          </div>
           <div class="inline">
@@ -59,7 +59,7 @@
 <!-- Conteúdo da Página -->
 
 <!-- Começo do FOOTER-->
-    <?php include "../App/Views/footer.php"; ?>
+    <?php include_once "../App/Views/footer.php"; ?>
 <!-- Começo do FOOTER-->
  
     <script src="<?=URL?>/public/bootstrap/js/bootstrap.js"></script>
