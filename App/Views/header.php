@@ -7,6 +7,7 @@
 </head>
 <body>
 <header>
+<<<<<<< HEAD
     <div class="logo">
         <img src="img/logo-IFRO.jpg" alt="logo_IFRO">
     </div>
@@ -21,6 +22,26 @@
         <button class="btn"><a href="<?URL?>./pagina/login">Entrar</a></button>
         <button class="btn cadastra"><a href="<?=URL?>./pagina/cadastro">Cadastra-se</a></button>
     </div>
+=======
+<header>
+        <div class="logo">
+            <img src="img/logo-IFRO.jpg" alt="logo_IFRO">
+        </div>
+        <nav> <!-- começo navegação -->
+            <ul class="ul">
+                
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="#footer" class="rolagem">Sobre Nos</a></li>
+                <li><a href="#footer" class="rolagem">Contato</a></li>
+
+            </ul>
+        </nav> <!-- fim navegação -->
+        <div class="butoes">
+            <button class="btn"><a href="<?URL?>./pagina/login">Entrar</a></button>
+            <button class="btn cadastra"><a href="<?=URL?>./pagina/cadastro">Cadastra-se</a></button>
+        </div>
+    </header>
+>>>>>>> a145eb78442051242a3a200076d0667c75e57c6c
     </header>
 </body>
 </html>
