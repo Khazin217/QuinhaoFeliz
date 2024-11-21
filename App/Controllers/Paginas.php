@@ -29,7 +29,5 @@ class Paginas extends Controller{
                  orientado a objetos com MVC'];
      $this->view('pagina/salgados', $dados);
     }
-
 }//fim da classe Paginas
-
 ?>

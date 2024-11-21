@@ -30,7 +30,7 @@
 <!-- Fim do Código do Vlibras-->
 
 <!-- Inclui o HEADER da Página -->
-    <?php include_once "../App/Views/header.php"; $rotas = new Rota(); ?>
+    <?php include "../App/Views/header.php"; $rotas = new Rota(); ?>
 <!-- Inclui o HEADER da Página -->
 
 <!-- Conteúdo da Página -->
@@ -59,7 +59,7 @@
 <!-- Conteúdo da Página -->
 
 <!-- Começo do FOOTER-->
-    <?php include_once "../App/Views/footer.php"; ?>
+    <?php include "../App/Views/footer.php"; ?>
 <!-- Começo do FOOTER-->
  
     <script src="<?=URL?>/public/bootstrap/js/bootstrap.js"></script>
