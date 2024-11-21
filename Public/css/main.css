@@ -9,6 +9,10 @@ body{
     font-family: sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* -- -- -- -- -- -- -- Estilizando a imagem de titulo -- -- -- -- -- -- -- */
 .conteiner_main{
     background-image: url("../img/banner-fundo.jpeg"); /* Aqui troca a imagem de fundo */

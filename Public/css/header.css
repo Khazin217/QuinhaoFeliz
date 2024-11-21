@@ -1,14 +1,6 @@
-/* Estilizando o HEADER da página  */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Essa parte faz o deslize da página para o "Sobre nos" e "Contato" */
-html{
-    scroll-behavior: smooth;
-}
+
 
 .logo img{
     width: 75px;
@@ -48,14 +40,14 @@ header{
 .butoes a{
     text-decoration: none;
 }
-.btn{
+.botao1{
     padding: 10px 20px;
     border: 1px solid #000;
     cursor: pointer;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
 }
-.btn:hover {
+.botao1:hover {
     background-color: #ccc;
 }
 .cadastra {

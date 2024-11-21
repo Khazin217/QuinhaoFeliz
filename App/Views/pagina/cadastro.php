@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/cadastro.css"/>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/header.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/footer.css"> -->
-     <title>Cadastrar</title>
-</head>
-<body>
-
-    <form action="formulario" class="form">
+<form action="formulario" class="form">
         <h1 class="titulo" >Faça seu Cadastro</h1>
             <div>
                 <label for="nome">Nome: </label>
@@ -28,7 +15,4 @@
 
                 <button class="botao" style="left: center; " type="submit" href="<?=URL?>./pagina/login">Cadastrar</button>
             </div>
-    </form>
-    
-</body>
-</html>
+</form>
