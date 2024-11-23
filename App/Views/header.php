@@ -10,7 +10,7 @@
         </ul>
     </nav> <!-- fim navegação -->
     <div class="butoes">
-        <button class="botao1"><a href="<?=URL?>/pagina/login">Entrar</a></button>
+        <button class="botao1"><a href="Views/pagina/login.html">Entrar</a></button>
         <button class="botao_cadastra"><a href="<?=URL?>/pagina/cadastro">Cadastra-se</a></button>
     </div>
 </header>
