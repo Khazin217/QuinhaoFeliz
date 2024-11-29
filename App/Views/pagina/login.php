@@ -1,11 +1,14 @@
-<form action="formulario">
-    <div>
-      <label for="Email">E-mail: </label>
-      <input type="email" id="Email" name="email" placeholder="E-mail"><br><br>
+<form action="formulario" class="form_login">
+  <div>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 
-      <label for="senha">Senha: </label>
-      <input type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+    <label for="matricula">Matrícula: </label>
+    <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required><br><br>
 
-      <button type="submit" href="<?=URL?>./Public/index.php">Entrar</button>
-    </div>
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+    <button type="submit">Enviar</button>
+  </div>
 </form>

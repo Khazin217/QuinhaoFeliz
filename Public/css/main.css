@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -28,34 +26,34 @@ html{
 }
 
 .espaçamento{
-    height: 53.8vh;
+    height: 53.8vh; /* Espaçamentos entre a parte inicial com as categorias */
 }
 
+/* -- -- -- -- -- -- -- Estilizando das imagens Categoria -- -- -- -- -- -- -- */
 .img_categoria{
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 450px; /* Largura definida para as imagens de categoria */
+    border-radius: 10px; /* Arredondada as Bordas da Categoria */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
-
 .img_categoria:hover{
-    transform: scale(1.03);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 0,3);
-    cursor: pointer;
+    transform: scale(1.03); /* Adiciona um efeito de zoom leve */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 0,3); /* Adiciona uma sombra leve ao passar o mouse */
+    cursor: pointer; /* Muda o cursor do mouse para "POINTER" */
 }
-
 /* Parte do texto, parte do titulo e barra de pesquisa */
 .div_background{
-    flex-direction: column;
-    background-color: #fffaf2cc;
-    padding: 40px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1000px;
+    display: flex; /* Garante que o conteúdo seja flexível */
+    flex-direction: column; /* Elementos ficam em coluna */
+    background-color: #fffaf2cc; /* Faz o fundo ficar transparênte */
+    padding: 40px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    width: 90%; /* Largura do contêiner  */
+    max-width: 1000px; /* Largura máxima que o contêiner chega */
 }
-
 h1{
-    font-size: 3.5rem;
-    margin-bottom: 30px;
-    color: #fe6c2b;
+    font-size: 3.5rem; /* Tamanho do título */
+    margin-bottom: 30px; /* Espaçamento  embaixo do titulo */
+    color: #fe6c2b; /* Cor do título */
 }
 
 div p{
@@ -68,13 +66,13 @@ div p{
 .barra_pesquisa{
     display: flex; /* Define que é uma caixa flexivel */
     justify-content: center; /* Justifica o conteiner no meio */
-    margin-bottom: 30px;
-    width: 100%;
+    margin-bottom: 30px; /* Espaçamento abaixo da barra de pesquisa */
+    width: 60%; /* Largura total */
 }
 
 .conteiner_pesquisa{
     padding: 10px;
-    width: 60;
+    width: 60%;
     border: 1px solid #ccc3cc;
     border-radius: 5px 0 0 5px;
     font-size: 1rem;

@@ -10,7 +10,10 @@
             <label for="Senha">Senha: </label>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha"> <br>
 
-            <a style="width: 10px;" href="<?=URL?>/pagina/login">Já possui uma conta? - Faça Login. </a>
+            <label for="Senha">Confirma Senha: </label>
+            <input type="password" id="senha" name="senha" placeholder="Confirme sua Senha.."> <br>
+
+            <a class="link_login" style="width: 10px;" href="<?=URL?>/pagina/login">Já possui uma conta? - Faça Login. </a>
 
             <button class="botao" style="left: center;" type="submit" href="<?=URL?>/pagina/login">Cadastrar</button>
         </div>

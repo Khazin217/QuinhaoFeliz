@@ -29,5 +29,18 @@ class Paginas extends Controller{
                  orientado a objetos com MVC'];
      $this->view('pagina/salgados', $dados);
     }
+    public function doces(){
+      $dados = ['titulo'=>'Sobre nós...',
+                'descricao'=>'Esta aula é sobre PHP 
+                 orientado a objetos com MVC'];
+     $this->view('pagina/doces', $dados);
+    }
+    public function bebidas(){
+      $dados = ['titulo'=>'Sobre nós...',
+                'descricao'=>'Esta aula é sobre PHP 
+                 orientado a objetos com MVC'];
+     $this->view('pagina/bebidas', $dados);
+    }
+    
 }//fim da classe Paginas
 ?>
