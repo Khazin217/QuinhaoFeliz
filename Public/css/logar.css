@@ -19,11 +19,32 @@
 
 /* Estilo dos campos de entrada */
 .form_login input[type="text"],
-.form_login input[type="email"] {
+.form_login input[type="email"],
+.form_login input[type="password"] {
     width: 100%; /* Ocupar toda a largura disponível */
     padding: 10px; /* Espaçamento interno */
     margin-bottom: 15px; /* Espaçamento entre os campos */
     border: 1px solid #ccc; /* Borda sutil */
     border-radius: 5px; /* Arredonda os cantos */
     font-size: 14px; /* Define o tamanho do texto */
+    transition: border-color 0.3s; /* Animação de foco */
+}
+
+/* Efeito de hover no botão */
+.form_login button:hover {
+    background-color: #4cae4c; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento no botão ao passar o mouse */
+}
+
+.form_login button {
+    width: 100%; /* O botão ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    background-color: #5cb85c; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Muda o formator do curso */
+    transition: background-color 0.3s, transform 0.2s; /* Animação de hover e transformação */
 }

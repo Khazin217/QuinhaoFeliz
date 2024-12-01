@@ -10,10 +10,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=APP_NOME?></title>
-    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/cadastro.css"/>
+    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/cadastrar.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/logar.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/header.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/categorias.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>
     <link rel="icon" href="<?=URL?>./img/Logotipo - Quinhão Feliz.png" alt="logo tipo">
@@ -40,9 +41,9 @@
 
 
 <!-- Começo do FOOTER-->
-<?php include "../App/Views/footer.php"; ?>
-<!-- Começo do FOOTER-->
- 
+    <?php include "../App/Views/footer.php"; ?>
+<!-- Fim do FOOTER-->
+
     <script src="<?=URL?>/public/bootstrap/js/bootstrap.js"></script>
     <script src="<?=URL?>/public/js/query.js"></script>
 </body>

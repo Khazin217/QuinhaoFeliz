@@ -1,7 +1,6 @@
 .form{
-<<<<<<< HEAD
     max-width: 400px; /* Largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário na página */
+    margin: 50px auto; /* Centraliza o formulário na página */
     padding: 20px; /* Espaçamento interno */
     border: 1px solid #ccc; /* Borda leve */
     border-radius: 5px; /* Borda arredondada */
@@ -11,11 +10,11 @@
 /* Estilizando o título */
 .titulo{
     text-align: center; /* Centraliza o texto do título */
-    color: #333;
+    color: #f2643d;
 }
 
 /* Estilizando os campos de entrada */
-input[type="text"], input[type="email"], input[type="password"]{
+input[type="nome"], input[type="email"], input[type="password"]{
     width: 100%; /* Largura total do campo */
     padding: 10px; /* Espaçamento interno */
     margin-bottom: 15px; /* Espaçamento abaixo do campo */
@@ -50,38 +49,3 @@ input[type="text"], input[type="email"], input[type="password"]{
 .botao:hover {
     background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }
-=======
-    align-items: center;
-    margin-left: 40%;
-    margin-top: 10%;
-    position: center;
-    width: 20%;
-  
-      background-color: rgb(94, 150, 131);
-      position: center;
-      border-radius: 10px;
-      padding: 10px 10px;           
-      border-radius: 15px;
-  }
-  div{
-      color:black;
-  }
-  .titulo{
-      font-family: Arial, Helvetica, sans-serif;
-  }
-  .botao{
-      height: auto;
-      width: 50%;
-      margin: 22%;
-      margin-top: 8%;
-      margin-block-end:6%;
-      border-radius: 8px;
-      border: none;
-      padding: 10px;
-      background-color: black;
-      color: white;
-  }.botao:hover{
-      background-color:rgb(93, 196, 53);
-      color: rgb(255, 255, 255);
-  }
->>>>>>> 40a6f4b1c8c3c873d5d37d424f69da034c4c64a3
