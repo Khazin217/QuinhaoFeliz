@@ -65,7 +65,8 @@
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
     <label for="qtd_produto">Escolha o sabor:</label>
-    <button class="btn_compra">Comprar</button> <br><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Bolo_de_Chocolate', 'Bolo de Chocolate', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="torta_geleia_morango" class="detalhe_produto"> <!-- Detalhe da TORTA DE GELEIA DE MORANGO -->
@@ -75,7 +76,8 @@
     <p class="preco">R$8,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Torta_de_Geleia_de_Morango', 'Torta de Geleia de Morango', 8.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="donut" class="detalhe_produto"> <!-- Detalhe do DONUT -->
@@ -85,7 +87,8 @@
     <p class="preco">R$5,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Donut', 'Donut', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="brigadeiro" class="detalhe_produto"> <!-- Detalhe do BRIGADEIRO -->
@@ -95,7 +98,8 @@
     <p class="preco">R$3,00</p> <br> 
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br> <br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Brigadeiro', 'Brigadeiro', 3.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="trufa" class="detalhe_produto"> <!-- Detalhe da TRUFA -->
@@ -105,7 +109,8 @@
     <p class="preco">R$5,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('trufa', 'Trufa', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="alfajor" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
@@ -115,6 +120,7 @@
     <p class="preco">R$5,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
