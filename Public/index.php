@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/logar.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/header.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/historico.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/categorias.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="<?=URL?>/public/bootstrap/css/bootstrap.css"/>

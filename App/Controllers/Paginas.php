@@ -41,6 +41,11 @@ class Paginas extends Controller{
                  orientado a objetos com MVC'];
      $this->view('pagina/bebidas', $dados);
     }
-    
+    public function historico(){
+      $dados = ['titulo'=>'Sobre nós...',
+                'descricao'=>'Esta aula é sobre PHP 
+                 orientado a objetos com MVC'];
+     $this->view('pagina/historico', $dados);
+    }
 }//fim da classe Paginas
 ?>

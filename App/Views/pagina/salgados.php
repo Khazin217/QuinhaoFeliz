@@ -1,18 +1,26 @@
 <script>
+    // Função para exibir os detalhes de um produto específico
     function MostraDetalhesProduto(productId) {
+        // Oculta a lista de produtos
         document.querySelector('.lista_produto').style.display = 'none';
+        // Oculta todos os detalhes de produtos
         document.querySelectorAll('.detalhe_produto').forEach(detail => detail.style.display = 'none');
+        // Exibe apenas os detalhes do produto correspondete ao ID
         document.getElementById(productId).style.display = 'block';
     }
 
+    // Função para voltar á lista de produtos
     function MostraListaProduto() {
+        // Exibe a lista de produtos
         document.querySelector('.lista_produto').style.display = 'flex';
+        // Oculta os detalhes de todos outros os outros produtos
         document.querySelectorAll('.detalhe_produto').forEach(detail => detail.style.display = 'none');
     }
 </script>
 
 <h1 class="titulo_categoria">Salgados</h1>   
 <!-- Itens do catalógo -->
+<!-- Cada item da lista apresenta um produto -->
 <div class="container">
     <div class="lista_produto">
         <div class="itens_produto" onclick="MostraDetalhesProduto('coxinha')">
@@ -59,7 +67,7 @@
 </div>
 <!-- Fim do Catalógo -->
 
-<!-- Mostra de detalhes dos produtos -->
+<!-- Detalhes do produto específico -->
 <div id="coxinha" class="detalhe_produto"> <!-- Detalhe da COXINHA -->
     <h1>Coxinha de Frango</h1>
     <img src="<?=URL?>/img/coxinha.png" alt="coxinha">

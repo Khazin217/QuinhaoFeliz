@@ -1,12 +1,19 @@
 <script>
+    // Função para exibir os detalhes de um produto específico
     function MostraDetalhesProduto(productId) {
+        // Oculta a lista de produtos
         document.querySelector('.lista_produto').style.display = 'none';
+        // Oculta todos os detalhes de produtos
         document.querySelectorAll('.detalhe_produto').forEach(detail => detail.style.display = 'none');
+        // Exibe apenas os detalhes do produto correspondete ao ID
         document.getElementById(productId).style.display = 'block';
     }
 
+    // Função para voltar á lista de produtos
     function MostraListaProduto() {
+        // Exibe a lista de produtos
         document.querySelector('.lista_produto').style.display = 'flex';
+        // Oculta os detalhes de todos outros os outros produtos
         document.querySelectorAll('.detalhe_produto').forEach(detail => detail.style.display = 'none');
     }
 </script>

@@ -26,7 +26,7 @@
             <a href="<?=URL?>/pagina/bebidas">
                 <img class="img_categoria" src="<?=URL?>/img/Bebidas.jpg" alt="Imagem_Bebidas">
             </a>
-            <a href="<?=URL?>/pagina/historico">
+            <a href="<?=URL?>./pagina/historico">
                 <img class="img_categoria" src="<?=URL?>/img/Historico.jpg" alt="Imagem_Histórico">
             </a>
         </div> 

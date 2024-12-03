@@ -1,0 +1,47 @@
+/* Container Principal */
+.historico_container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+.historico_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Seção de histórico */
+.historico_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cada pedido */
+.pedido {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+}
+
+/* Título do pedido */
+.pedido h2 {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+/* Informações */
+.pedido p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Hover para realce */
+.pedido:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
