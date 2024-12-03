@@ -26,11 +26,7 @@
             <a href="<?=URL?>/pagina/bebidas">
                 <img class="img_categoria" src="<?=URL?>/img/Bebidas.jpg" alt="Imagem_Bebidas">
             </a>
-<<<<<<< HEAD
             <a href="<?=URL?>./pagina/historico">
-=======
-            <a href="<?=URL?>/pagina/carrinhoView">
->>>>>>> 728a5ed79f00d880a687671fad370236beeb7dae
                 <img class="img_categoria" src="<?=URL?>/img/Historico.jpg" alt="Imagem_Histórico">
             </a>
         </div> 

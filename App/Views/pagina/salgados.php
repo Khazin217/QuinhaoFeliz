@@ -75,8 +75,7 @@
     <p class="preco">R$5,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <label for="qtd_produto">Escolha o sabor:</label>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('coxinha', 'Coxinha de Frango', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -93,7 +92,7 @@
         <option value="salsicha">Salsicha</option>
         <option value="frango">Frango</option>
     </select> <br><br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('roque', 'Roque', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -110,7 +109,7 @@
         <option value="queijo">Queijo</option>
         <option value="carne">Carne</option>
     </select> <br><br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('pastel', 'Pastel', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -121,7 +120,7 @@
     <p class="preco">R$5,00</p> <br> 
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br> <br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('saltenha', 'Saltenha de Frango', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -137,7 +136,7 @@
         <option value="Presunto">Presunto e Queijo</option>
         <option value="frango">Frango</option>
     </select> <br><br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('pizza', 'Pizza Rolls', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -154,7 +153,7 @@
         <option value="salsicha">Salsicha</option>
         <option value="frango">Frango</option>
     </select> <br><br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('croissant', 'Croissant', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
