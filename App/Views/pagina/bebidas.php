@@ -63,7 +63,8 @@
         <option value="salsicha">Guaraná</option>
         <option value="frango">Coca-Cola</option>
     </select> <br><br>
-    <button class="btn_compra">Comprar</button> <br><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Refrigerante_2L', 'Refrigerante de 2L', 10.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="kapo" class="detalhe_produto"> <!-- Detalhe da KAPO -->
@@ -79,7 +80,8 @@
         <option value="salsicha">Uva</option>
         <option value="frango">Laranja</option>
     </select> <br><br>
-    <button class="btn_compra">Comprar</button> <br><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Kapo', 'Kapo', 8.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="latinha_refri" class="detalhe_produto"> <!-- Detalhe dA LATINHA DE REFRIGERANTE -->
@@ -95,7 +97,8 @@
         <option value="salsicha">Coca-Cola - 0 Açúcar</option>
         <option value="frango">Uva</option>
     </select> <br><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Latinhas_Refrigerante', 'Latinhas de Refrigerante', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="parecis" class="detalhe_produto"> <!-- Detalhe do PARECIS -->
@@ -105,7 +108,8 @@
     <p class="preco">R$6,00</p> <br> 
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br> <br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Parecis', 'Parecis', 6.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="garrafinhas" class="detalhe_produto"> <!-- Detalhe da GARRAFINHAS -->
@@ -115,7 +119,8 @@
     <p class="preco">R$3,50</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('trufa', 'Garrafinhas', 3.50, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
 <div id="toddynho" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
@@ -125,6 +130,7 @@
     <p class="preco">R$3,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button> <br> <br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Toddynho', 'Toddynho', 3.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>

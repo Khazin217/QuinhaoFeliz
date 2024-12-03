@@ -1,39 +1,42 @@
 <!-- carrinhoView.php -->
 <h1>Seu Carrinho</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Produto</th>
-            <th>Quantidade</th>
-            <th>Preço Unitário</th>
-            <th>Total</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($itens as $index => $item): ?>
+  <!-- Aqui será exibido os itens do carrinho -->
+  <div id="carrinho_container">
+    <table>
+        <thead>
             <tr>
-                <td><?= $item['produto'] ?></td>
-                <td><?= $item['quantidade'] ?></td>
-                <td><?= $item['preco'] ?></td>
-                <td><?= $item['quantidade'] * $item['preco'] ?></td>
-                <td><a href="remover.php?index=<?= $index ?>">Remover</a></td>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Total</th>
+                <th>Ações</th>
             </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            <?php foreach ($itens as $index => $item): ?>
+                <tr>
+                    <td><?= $item['produto'] ?></td>
+                    <td><?= $item['quantidade'] ?></td>
+                    <td><?= $item['preco'] ?></td>
+                    <td><?= $item['quantidade'] * $item['preco'] ?></td>
+                    <td><a href="remover.php?index=<?= $index ?>">Remover</a></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 
-<h3>Total: R$<?= number_format($total, 2) ?></h3>
+    <h3>Total: R$<?= number_format($total, 2) ?></h3>
 
-<form action="finalizar.php" method="POST">
-    <label for="metodoPagamento">Escolha o método de pagamento:</label><br>
-    <select name="metodoPagamento" id="metodoPagamento">
-        <option value="pix">PIX</option>
-        <option value="cartao">Cartão</option>
-    </select><br><br>
-    <div id="parcelamento" style="display: none;">
-        <label for="parcelas">Escolha o número de parcelas:</label><br>
-        <input type="number" name="parcelas" id="parcelas" value="1" min="1" max="12"><br><br>
+    <form action="finalizar.php" method="POST">
+        <label for="metodoPagamento">Escolha o método de pagamento:</label><br>
+        <select name="metodoPagamento" id="metodoPagamento">
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão</option>
+        </select><br><br>
+        <div id="parcelamento" style="display: none;">
+            <label for="parcelas">Escolha o número de parcelas:</label><br>
+            <input type="number" name="parcelas" id="parcelas" value="1" min="1" max="12"><br><br>
+        </div>
     </div>
     <button type="submit">Finalizar Compra</button>
 </form>
