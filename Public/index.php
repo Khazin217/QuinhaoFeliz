@@ -1,7 +1,6 @@
 <?php
     include "./../App/configuracao.php";
     include "./../App/autoload.php";
-    // include "./../App/Libraries/Controller.php";
 ?>
 
 <!DOCTYPE html>
