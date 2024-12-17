@@ -1,0 +1,88 @@
+.titulo_categoria{
+    font-family: 'Brush Script', cursive;
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto do título */
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista_produto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.itens_produto{
+    width: 150px; /* Largura que é fixa para os itens */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Muda a forma do curso */
+    transition: transform 0.2s; /* Indica o efeito da transição */
+}
+.itens_produto:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+.itens_produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.itens_produto p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.preco {
+    font-weight: bold;
+    color: black;
+}
+
+.detalhe_produto {
+    display: none; /* Oculta inicialmente os detalhes dos produtos */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro dos detalhes */
+    width: 80%; /* Largura dos detalhes do produto */
+    max-width: 600px; /* Limita a largura máxima */
+    margin: 0 auto 50px; /* Centraliza a div */
+}
+.detalhe_produto img {
+    width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+input[type="number"], select {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+.btn_compra {
+    display: block; /* Faz com que o botão seja um bloco */
+    margin: 20px auto; /* Adiciona margem e centraliza o botão */
+    padding: 15px 55px;
+    border-radius: 3px;
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* Indica que é clicável */
+}
+.btn_compra:hover {
+    background-color: #007BFF; /* Cor ao passar o mouse */
+}
+.back-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}

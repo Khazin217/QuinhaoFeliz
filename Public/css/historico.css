@@ -1,0 +1,44 @@
+/* Container Principal */
+.historico_container {
+    margin: 20px auto; /* Centraliza o contêiner com margem de 20px em todos os lados */
+    max-width: 800px;
+    padding: 20px; /* Adiciona 20px de espaço interno ao contêiner */
+    font-family: Arial, sans-serif; /* Definição da fonte do texto */
+}
+/* Título */
+.historico_container h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona 20px de espaço abaixo do título */
+    color: #333;
+}
+/* Seção de histórico */
+.historico_lista {
+    display: flex; /* Utiliza o modelo de caixa flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna vertical */
+    gap: 15px; /* Adiciona 15px de espaço entre os itens da lista */
+}
+/* Cada pedido */
+.pedido {
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Suaviza os cantos do elemento com um raio de 5px */
+    padding: 15px; /* Adiciona 15px de espaço interno ao elemento */
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s; /* Adiciona uma transição suave para a sombra do box */
+}
+
+/* Título do pedido */
+.pedido h2 {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+/* Informações */
+.pedido p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Hover para realce */
+.pedido:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

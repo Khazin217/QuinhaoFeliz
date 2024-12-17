@@ -39,6 +39,5 @@ class Rota{
          return $url; //retorna a url
       }//fim do if
    }//fim do método url
-
 }//fim da classe
 ?>

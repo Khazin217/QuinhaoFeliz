@@ -1,0 +1,51 @@
+/* Essa parte faz o deslize da página para o "Sobre nos" e "Contato" */
+.logo img{
+    width: 75px; /* Defini a largura da img */
+}
+.ul{
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    gap: 20px; /* Adiciona um espaço de 20 pixels entre os itens da lista */
+}
+li a{
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: black; /* Define a cor do texto dos links como preto */
+}
+a:hover{
+    color: black;
+}
+button{
+    display: flex;
+    gap: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #88b499;
+    border-radius: 3px solid #8b7bd6;
+    align-items: center;
+}
+/* começo da alteração nos botôes */
+.butoes {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+.butoes a{
+    text-decoration: none; /* Remove o sublinhado dos links dentro do contêiner de botões */
+}
+.botao1, .botao_cadastra{
+    padding: 10px 15px; /* Torna os botões maiores */
+    font-size: 16px; /* Aumenta o tamanho do texto */
+    color: black; /* Define a cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: all 0.3s;
+}
+.botao1:hover, .botao_cadastra:hover {
+    background-color: #ccc;
+}
