@@ -75,7 +75,7 @@
     <p class="preco">R$5,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
-    <button class="btn_compra">Comprar</button>
+    <button href="?adicionar=<?php echo $key ?>" class="btn_compra">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
