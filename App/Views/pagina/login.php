@@ -1,4 +1,4 @@
-<form action="formulario" class="form_login">
+<form action="formulario" action="<?=URL?>/usuarios/logar" class="form_login">
   <div>
     <label for="nome">Nome: </label>
     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>

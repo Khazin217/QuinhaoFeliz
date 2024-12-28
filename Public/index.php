@@ -1,6 +1,8 @@
 <?php
+session_start();
     include "./../App/configuracao.php";
     include "./../App/autoload.php";
+    
 ?>
 
 <!DOCTYPE html>

@@ -119,9 +119,19 @@
 
         $this->view('usuarios/logar', $dados);
     }
+    
     private function criarSessaoUsuario($usuario){
         $_SESSION['usuario_id'] = $usuario->id;
         $_SESSION['usuario_nome'] = $usuario->nome;
         $_SESSION['usuario_email'] = $usuario->email;
     }// fim da função criarSessaoUsuario
+
+    public function sair(){
+        unset($_SESSION['usuario_id']);
+        unset($_SESSION['usuario_nome']);
+        unset($_SESSION['usuario_email']);
+
+        session_destroy();
+       URL::redirecionar('usuarios/logar');
+    }//fim da função sair
 }

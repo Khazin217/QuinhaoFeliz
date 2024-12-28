@@ -18,6 +18,7 @@ class Usuario{
             return false;
         endif;
     }//fim da funcão armazenar
+
     public function checarEmail($email){
         $this->db->query("SELECT email FROM usuarios WHERE email = :e");
         $this->db->bind(":e", $email);
@@ -26,8 +27,8 @@ class Usuario{
         else:
             return false;
         endif;
-
     }//fim da função checarEmail
+
     public function checarLogin($email, $senha){
         $this->db->query("SELECT * FROM usuarios WHERE email = :e");
         $this->db->bind(":e", $email);

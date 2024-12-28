@@ -1,6 +1,10 @@
 <?php
 class Paginas extends Controller{
     public function index(){
+      if(Sessao::estaLogado()):
+        Url::redirecionar('posts');
+      endif;
+      
       $dados = ['titulo'=>'Quinhão Feliz',
                  'descricao'=> ''];
         $this->view('pagina/home', $dados);

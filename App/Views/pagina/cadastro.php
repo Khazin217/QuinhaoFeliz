@@ -1,4 +1,4 @@
-<form action="formulario" class="form">
+<form action="formulario" class="form" action="<?=URL?>/usuarios/cadastrar">
     <h1 class="titulo" >Faça seu Cadastro</h1>
     <div>
         <label for="nome">Nome: </label>

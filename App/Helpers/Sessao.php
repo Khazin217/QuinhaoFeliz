@@ -17,4 +17,13 @@ class Sessao{
             endif;
         endif;
     }//fim da função mensagem
+
+    public static function estaLogado(){
+        if(isset($_SESSION['usuario_id'])):
+            return  true;
+        else:
+            return false;
+        endif;
+    }// fim da função estaLogado
+    
 }//fim da classe Sessao
