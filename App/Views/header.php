@@ -1,16 +1,24 @@
-<header>
-    <div class="logo">
-        <a href="<?=URL?>./pagina/home"><img src="<?=URL?>/img/Logotipo - Quinhão Feliz.png" alt="logo_Quinhao"></a>
-    </div>
-    <nav class="navegacao"> <!-- começo navegação -->
-        <ul class="ul">
-            <li><a href="<?=URL?>./pagina/home">Home</a></li>
-            <li><a href="#footer" class="rolagem">Sobre Nos</a></li>
-            <li><a href="#footer" class="rolagem">Contato</a></li>
-        </ul>
-    </nav> <!-- fim navegação -->
-    <div class="butoes">
-        <button class="botao1"><a href="<?=URL?>./pagina/login">Entrar</a></button>
-        <button class="botao_cadastra"><a href="<?=URL?>./pagina/cadastro">Cadastra-se</a></button>
+<header class="headerbg"> <!-- div para background do header -->
+    <div class="header">
+        <div class="logo" >
+            <a href="<?=URL?>./pagina/home"><img src="<?=URL?>/img/logoQF.jpg" alt="logo_Quinhao"></a>
+        </div>
+
+        <nav>
+            <ul class="lista">
+                <li><a href="<?=URL?>./pagina/home.php">Home</a></li>
+                <li><a href="<?=URL?>./pagina/sobrenos.php">Sobre Nós</a></li>
+                <li><a href="<?=URL?>./pagina/contato.php">Contato</a></li>
+                
+            </ul>
+        </nav>
+      
+
+        <div class="botoes">
+            <button class="login"><a href="<?=URL?>./pagina/login">Login</a></button>
+            <button class="cadastra"><a href="<?=URL?>./pagina/cadastro">Cadastrar-se</a></button>
+            
+        </div>
+       
     </div>
 </header>

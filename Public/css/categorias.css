@@ -12,13 +12,14 @@
     align-items: center;
 }
 .lista_produto{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas por linha */
     gap: 20px;
     justify-content: center;
 }
 .itens_produto{
-    width: 150px; /* Largura que é fixa para os itens */
+    width: 100%; /* Ajusta a largura para ocupar a coluna */
+    max-width: 150px; /* Define um limite máximo de largura */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;

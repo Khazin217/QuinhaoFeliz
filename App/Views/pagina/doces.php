@@ -52,6 +52,16 @@
             <p>Alfajor</p>
             <p class="preco">R$3,00</p>
         </div>
+        <div class="itens_produto" onclick="MostraDetalhesProduto('cupcake')">
+            <img src="<?=URL?>/img/cupcake.webp" alt="cupcake">
+            <p>cupcake</p>
+            <p class="preco">R$2,00</p>
+        </div>
+        <div class="itens_produto" onclick="MostraDetalhesProduto('palha-italiana')">
+            <img src="<?=URL?>/img/palha-italiana.webp" alt="palha-italiana">
+            <p>Palha-italiana</p>
+            <p class="preco">R$6,00</p>
+        </div>
     </div>
 </div>
 <!-- Fim do Catalógo -->
@@ -98,7 +108,7 @@
     <p class="preco">R$3,00</p> <br> 
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br> <br>
-    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Brigadeiro', 'Brigadeiro', 3.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <button href="<?=URL?>/pagina/carrinho.php" class="btn_compra" onclick="adicionarAoCarrinho('Brigadeiro', 'Brigadeiro', 3.00, document.getElementById('qtd_produto').value)">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>
@@ -118,6 +128,28 @@
     <img src="<?=URL?>/img/alfajor.webp" alt="Alfajor">
     <p>Alfajor coberto com chocolate e decorado com confeitos.</p>
     <p class="preco">R$5,00</p>
+    <label for="qtd_produto">Escolha a quantidade:</label>
+    <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
+    <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
+</div>
+<div id="cupcake" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
+    <h1>Cupcake</h1>
+    <img src="<?=URL?>/img/cupcake.webp" alt="cupcake">
+    <p>cupcake coberto com chocolate.</p>
+    <p class="preco">R$2,00</p>
+    <label for="qtd_produto">Escolha a quantidade:</label>
+    <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
+    <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
+</div>
+<div id="Palha-italiana" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
+    <h1>Palha-italiana</h1>
+    <img src="<?=URL?>/img/palha-italiana.webp" alt="Palha-italiana<">
+    <p>Palha-italiana< coberto com chocolate.</p>
+    <p class="preco">R$2,00</p>
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
     <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>

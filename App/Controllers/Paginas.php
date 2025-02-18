@@ -47,5 +47,6 @@ class Paginas extends Controller{
                  orientado a objetos com MVC'];
      $this->view('pagina/historico', $dados);
     }
+  
 }//fim da classe Paginas
 ?>

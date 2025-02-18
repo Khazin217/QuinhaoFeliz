@@ -25,7 +25,6 @@ class CarrinhoController {
                     sabor: sabor
                 });
             }
-    
             mostrarCarrinho(); // Atualiza a visualização do carrinho
             window.location.href = '/carrinho'; // Redireciona para a página do carrinho
         }
@@ -49,7 +48,6 @@ class CarrinhoController {
                 });
             }
         }
-
     public function finalizarCompra($metodoPagamento, $parcelas = 1) {
         $total = $this->carrinho->calcularTotal();
         // Implementar lógica de pagamento, por exemplo, via PIX ou Cartão

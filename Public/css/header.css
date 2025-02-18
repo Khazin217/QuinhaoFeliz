@@ -1,51 +1,188 @@
-/* Essa parte faz o deslize da página para o "Sobre nos" e "Contato" */
-.logo img{
-    width: 75px; /* Defini a largura da img */
+.headerbg{
+    background-color: #f5f5f5;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
 }
-.ul{
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-style: none;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    height: 100px;
+}
+.header .logo img{
+    width: 100px; /* Define a largura da img */
+    height: auto;
+    align-items: center;
+}
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+.header .lista{
     list-style: none; /* Remove os marcadores padrão da lista */
-    display: flex; /* Exibe os itens da lista em linha */
-    gap: 20px; /* Adiciona um espaço de 20 pixels entre os itens da lista */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px; /* Adiciona um espaço de 20 pixels entre os itens da lista */ 
+    padding: 0px;
+    margin: 0;
 }
-li a{
+.header .lista a{
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: black; /* Define a cor do texto dos links como preto */
+    color: #C01C15; /* Define a cor do texto dos links como vermelho*/
+    padding: 16px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    margin-right: 10px;
 }
-a:hover{
-    color: black;
+
+/* Corrigindo o hover e o efeito :after */
+.header .lista a {
+    position: relative; /* Adiciona um contexto para o pseudo-elemento */
 }
-button{
+
+.header .lista a:after {
+    content: "";
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao 'a' */
+    bottom: 0; /* Posiciona no final do link */
+    left: 0;
+    height: 2px;
+    width: 0; /* Inicialmente, largura 0 */
+    background-color: #2b6a21;
+    transition: width 0.3s; /* Suaviza o efeito */
+}
+
+.header .lista a:hover:after {
+    width: 100%; /* Expande a barra ao passar o mouse */
+}
+
+
+.header button{
     display: flex;
     gap: 10px;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #88b499;
-    border-radius: 3px solid #8b7bd6;
-    align-items: center;
-}
+
 /* começo da alteração nos botôes */
-.butoes {
+.header .botoes {
     display: flex;
     text-decoration: none;
     gap: 10px;
     align-items: center;
     margin-left: auto;
 }
-.butoes a{
+.header .botoes a{
     text-decoration: none; /* Remove o sublinhado dos links dentro do contêiner de botões */
+    color: #2b6a21;
+    font-weight: bold;
+    font-size: 18px;
 }
-.botao1, .botao_cadastra{
+.header .login, .cadastra{
     padding: 10px 15px; /* Torna os botões maiores */
-    font-size: 16px; /* Aumenta o tamanho do texto */
-    color: black; /* Define a cor do texto */
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px;
+    border-style: none;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background-color: lightgrey;
     transition: all 0.3s;
 }
-.botao1:hover, .botao_cadastra:hover {
-    background-color: #ccc;
+.header .login:hover, .cadastra:hover {
+    background-color: grey;
+} 
+
+
+/* media query para configurar a responsividade */
+@media (max-width:800px){
+.header ul {
+gap:20px
+
 }
+.header ul a {
+    background: gainsboro;
+    padding: 12px 16px;
+}
+.header .botoes{
+    gap:20px;
+    background: gainsboro;
+    padding: 12px 16px;
+
+}
+}
+
+@media(max-width: 600px){
+.header ul{
+gap:12px
+}
+.header ul a{
+padding: 8px 12px;
+font-size: 14px;
+}
+.header .botoes{
+    gap:12px;
+    padding: 8px 12px;
+    font-size: 14px;
+
+}
+}
+/* Estilo para o carrinho flutuante */
+.cart-popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Janela do carrinho aberta */
+.cart-popup.open {
+    display: block;
+}
+
+/* Outros estilos do carrinho (exemplo) */
+.cart-popup h3 {
+    font-size: 1.5rem;
+    color: #b71c1c;
+}
+
+.cart-popup p {
+    font-size: 1.1rem;
+}
+
+#close-cart {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#close-cart:hover {
+    background-color: #b71c1c;
+}
+.cart-icon {
+    display: inline-block; /* Garantindo que o ícone tenha espaço suficiente */
+    padding: 10px;         /* Adicionando algum padding para facilitar o clique */
+    background-color: transparent; /* Definindo o fundo transparente */
+    border-radius: 50%;    /* Fazendo o fundo arredondado se preferir */
+    cursor: pointer;      /* Mudando o cursor para "mãozinha" */
+}
+

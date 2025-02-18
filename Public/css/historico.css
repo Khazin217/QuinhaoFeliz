@@ -1,29 +1,32 @@
 /* Container Principal */
 .historico_container {
-    margin: 20px auto; /* Centraliza o contêiner com margem de 20px em todos os lados */
+    margin: 20px auto;
     max-width: 800px;
-    padding: 20px; /* Adiciona 20px de espaço interno ao contêiner */
-    font-family: Arial, sans-serif; /* Definição da fonte do texto */
+    padding: 20px;
+    font-family: 'Brush Script', cursive;
 }
+
 /* Título */
 .historico_container h1 {
     text-align: center;
-    margin-bottom: 20px; /* Adiciona 20px de espaço abaixo do título */
-    color: #333;
+    margin-bottom: 20px;
+    color: black;
 }
+
 /* Seção de histórico */
 .historico_lista {
-    display: flex; /* Utiliza o modelo de caixa flexível */
-    flex-direction: column; /* Organiza os itens em uma coluna vertical */
-    gap: 15px; /* Adiciona 15px de espaço entre os itens da lista */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
 /* Cada pedido */
 .pedido {
     border: 1px solid #ddd;
-    border-radius: 5px; /* Suaviza os cantos do elemento com um raio de 5px */
-    padding: 15px; /* Adiciona 15px de espaço interno ao elemento */
+    border-radius: 8px;
+    padding: 15px;
     background-color: #f9f9f9;
-    transition: box-shadow 0.3s; /* Adiciona uma transição suave para a sombra do box */
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
 /* Título do pedido */
@@ -41,4 +44,22 @@
 /* Hover para realce */
 .pedido:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+/* Botão Reutilizar */
+.btn_reutilizar {
+    background-color:#C01C15;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn_reutilizar:hover {
+    background-color: red;
 }

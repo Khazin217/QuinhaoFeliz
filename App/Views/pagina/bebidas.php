@@ -53,6 +53,17 @@
             <p>Toddynho</p>
             <p class="preco">R$3,00</p>
         </div>
+        <div class="itens_produto" onclick="MostraDetalhesProduto('suco')">
+            <img src="<?=URL?>/img/suco.jpg" alt="suco">
+            <p>Suco</p>
+            <p class="preco">R$5,00</p>
+        </div>
+        <div class="itens_produto" onclick="MostraDetalhesProduto('agua-coco')">
+            <img src="<?=URL?>/img/agua.webp" alt="suco">
+            <p>Agua de coco</p>
+            <p class="preco">R$3,00</p>
+        </div>
+
     </div>
 </div>
 <!-- Fim do Catalógo -->
@@ -139,6 +150,28 @@
     <label for="qtd_produto">Escolha a quantidade:</label>
     <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
     <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Toddynho', 'Toddynho', 3.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
+    <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
+</div>
+<div id="suco" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
+    <h1>Suco de frutas</h1>
+    <img src="<?=URL?>/img/suco.jpg" alt="suco">
+    <p>suco para se refrescar</p>
+    <p class="preco">R$5,00</p>
+    <label for="qtd_produto">Escolha a quantidade:</label>
+    <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
+    <br><br>
+    <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
+</div>
+<div id="agua-coco" class="detalhe_produto"> <!-- Detalhe do ALFAJOR -->
+    <h1>água de coco</h1>
+    <img src="<?=URL?>/img/agua.webp" alt="agua-coco">
+    <p>Água de coco para se refrescar</p>
+    <p class="preco">R$5,00</p>
+    <label for="qtd_produto">Escolha a quantidade:</label>
+    <input type="number" id="qtd_produto" name="quantity" value="1" min="1" max="10"><br>
+    <button href="<?=URL?>/pagina/carrinhoView" class="btn_compra" onclick="adicionarAoCarrinho('Alfajor', 'Alfajor', 5.00, document.getElementById('qtd_produto').value)">Comprar</button>
     <br><br>
     <a href="#" class="back-link" onclick="MostraListaProduto()">Voltar para a lista de produtos</a>
 </div>

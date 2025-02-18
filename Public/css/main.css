@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -13,7 +13,7 @@ html{
 
 /* -- -- -- -- -- -- -- Estilizando a imagem de titulo -- -- -- -- -- -- -- */
 .conteiner_main{
-    background-image: url("../img/banner-fundo.jpeg"); /* Aqui troca a imagem de fundo */
+    background-image: url("/Public/img/banner-fundo.jpeg"); /* Aqui troca a imagem de fundo */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -25,9 +25,7 @@ html{
     align-content: center; /* Centraliza os containes nos centro */
 }
 
-.espaçamento{
-    height: 53.8vh; /* Espaçamentos entre a parte inicial com as categorias */
-}
+
 
 /* -- -- -- -- -- -- -- Estilizando das imagens Categoria -- -- -- -- -- -- -- */
 .img_categoria{
@@ -41,32 +39,34 @@ html{
     cursor: pointer; /* Muda o cursor do mouse para "POINTER" */
 }
 /* Parte do texto, parte do titulo e barra de pesquisa */
-.div_background{
+.conteiner_main .titulo{
     display: flex; /* Garante que o conteúdo seja flexível */
     flex-direction: column; /* Elementos ficam em coluna */
     background-color: #fffaf2cc; /* Faz o fundo ficar transparênte */
     padding: 40px; /* Adiciona espaçamento interno */
     border-radius: 10px; /* Borda arredondada */
-    width: 90%; /* Largura do contêiner  */
+    width: 100%; /* Largura do contêiner  */
     max-width: 1000px; /* Largura máxima que o contêiner chega */
 }
-h1{
-    font-size: 3.5rem; /* Tamanho do título */
-    margin-bottom: 30px; /* Espaçamento  embaixo do titulo */
-    color: #fe6c2b; /* Cor do título */
+div h1{
+    font-size: 50px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento  embaixo do titulo */
+    margin-top: 60px;
+    color: black; /* Cor do título */
+    font-weight: bolder;
 }
 
 div p{
-    font-size: 1.5rem;
+    font-size: 26px;
     margin-bottom: 30px;
-    color: #dd6552;
+    color: #C01C15;
 }
 
 /* -- -- -- -- -- -- -- Estilização da barra de pesquisa -- -- -- -- -- -- -- */
 .barra_pesquisa{
     display: flex; /* Define que é uma caixa flexivel */
     justify-content: center; /* Justifica o conteiner no meio */
-    margin-bottom: 30px; /* Espaçamento abaixo da barra de pesquisa */
+    margin-bottom: 100px; /* Espaçamento abaixo da barra de pesquisa */
     width: 60%; /* Largura total */
 }
 
@@ -74,16 +74,17 @@ div p{
     padding: 10px;
     width: 60%;
     border: 1px solid #ccc3cc;
-    border-radius: 5px 0 0 5px;
+    border-radius: 15px 0px 0px 15px;
     font-size: 1rem;
 }
 
 .butao_pesquisa{
     padding: 10px 20px;
-    background-color: #d43b2d;
-    color: #020001;
+    background-color: lightgray;
+    color: #C01C15;
+    font-weight: bold;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius:0px 15px 15px 0px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -97,11 +98,11 @@ div p{
 .inline{
     background-position: center center;
     display: flex;
-    gap: 10px 30px;
-    padding: 20px;
+    gap: 10px 10px;
+    padding: 10px;
 }
 
 .img_categoria{
-    width: 450px;
+    max-width: 350px;
     border-radius: 20px;
 }

@@ -40,7 +40,6 @@
     </div>
     <button type="submit">Finalizar Compra</button>
 </form>
-
 <script>
     document.getElementById('metodoPagamento').addEventListener('change', function () {
         if (this.value === 'cartao') {
